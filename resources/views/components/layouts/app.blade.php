@@ -7,7 +7,7 @@
 
         <title>{{ $title ?? 'Aluno' }}</title>
     </head>
-    <body>
+    <body style="background-color: #f8f9fa">
         
   
        
@@ -30,7 +30,7 @@
                 <ul class="navbar-nav">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Abas</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Link</a></li>
+                      <li><a class="dropdown-item" href="/admin">cadastro de aluno</a></li>
                       <li><a class="dropdown-item" href="#">Another link</a></li>
                       <li><a class="dropdown-item" href="#">A third link</a></li>
                     </ul>
