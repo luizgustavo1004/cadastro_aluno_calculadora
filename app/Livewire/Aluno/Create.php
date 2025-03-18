@@ -2,7 +2,7 @@
 
 namespace App\Livewire\Aluno;
 
-use App\Models\aluno;
+use App\Models\Aluno;
 use Livewire\Component;
 
 class Create extends Component
@@ -26,7 +26,7 @@ class Create extends Component
 
 
     public function store(){
-        aluno::create([
+        Aluno::create([
             'cpf' => $this -> cpf,
             'codigo_da_escola' => $this -> codigo_da_escola,
             'email' => $this -> email,

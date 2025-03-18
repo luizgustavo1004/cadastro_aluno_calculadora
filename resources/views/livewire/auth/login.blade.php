@@ -28,6 +28,8 @@
 
             <button type="submit" class="btn btn-primary w-100">Entrar</button>
 
+            <a href="/aluno/create">Cadastro Aluno</a>
+
         </form>
 
     </div>

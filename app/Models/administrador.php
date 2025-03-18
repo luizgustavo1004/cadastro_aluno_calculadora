@@ -2,17 +2,14 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Aluno extends Model
+class administrador extends Model
 {
-    use HasFactory;
-
     protected $fillable = [
         'cpf',
         'email',
-        'rm',
+        'cbo',
         'codigo_da_escola',
         'senha'
     ];
