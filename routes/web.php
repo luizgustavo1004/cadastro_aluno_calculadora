@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Administrador\Admin\Create as AdminCreate;
 use App\Livewire\Administrador\Dashboard;
 use App\Livewire\Administrador\Professor\Create;
 use App\Livewire\Aluno\Create as AlunoCreate;
@@ -25,3 +26,4 @@ Route::get('/aluno', function (){
 
 Route::get('/administrador',  Create::class)->middleware(['auth', 'role:admin'])->name('administrador.dashboard');
 
+Route::get('/admin/create', AdminCreate::class)->middleware(['auth', 'role:admin']);
