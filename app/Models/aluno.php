@@ -11,9 +11,13 @@ class Aluno extends Model
 
     protected $fillable = [
         'cpf',
-        'email',
         'rm',
         'codigo_da_escola',
-        'senha'
+        'user_id'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

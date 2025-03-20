@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('cpf', '20')->unique()->nullable(false);
             $table->string('rm', '20')->unique()->nullable(false);
             $table->string('codigo_da_escola', '6')->nullable(false);
-            $table->string('email', '80')->unique()->nullable(false);
-            $table->string('senha', '40')->nullable(false);
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

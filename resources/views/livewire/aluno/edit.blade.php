@@ -6,7 +6,7 @@
         </div>
     @endif
 
-    <div style="width: 50%; margin-left: 25%; margin-bottom: 25px" class="card">
+    <div style="width: 50%; margin-left: 25%; margin-bottom: 25px;" class="card">
         <h5 style="text-align: center" class="card-header">Atualizar dados</h5>
 
         <div class="card-body">
@@ -34,7 +34,7 @@
                     <input type="text"
                         style="border-radius: 100px; border-inline-color: black; border-block-color: black"
                         class="form-control" id="senha" name="senha" placeholder="Ex.: batman123"
-                        wire:model.defer="senha">
+                        wire:model.defer="password">
                 </div>
 
                 <div class="mb-3">

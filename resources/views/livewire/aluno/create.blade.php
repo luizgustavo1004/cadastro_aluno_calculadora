@@ -53,10 +53,10 @@
 
                 <div class="mb-3">
                     <label for="senha" class="form-label">senha</label>
-                    <input type="text"
+                    <input type="password"
                         style="border-radius: 100px; border-inline-color: black; border-block-color: black"
                         class="form-control" id="senha" name="senha" placeholder="Ex.: batman123"
-                        wire:model.defer="senha">
+                        wire:model.defer="password">
                 </div>
 
 

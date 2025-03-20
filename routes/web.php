@@ -13,13 +13,8 @@ Route::get('/aluno/create', AlunoCreate::class);
 Route::get('/', Login::class)->name('login');
 
 
-Route::get('/aluno', function(){
-return 'Login Aluno';
-})->middleware(['auth', 'role:user'])->name('user.dashboard');
+Route::get('/aluno', Edit::class)->middleware(['auth', 'role:Aluno'])->name('aluno.dashboard');
 
-
-
-Route::get('/aluno', Edit::class)->middleware(['auth', 'role:user'])->name('user.dashboard');
 
 Route::get('/professor', function () {
     return 'login professor';

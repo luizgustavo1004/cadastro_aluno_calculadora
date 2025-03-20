@@ -28,20 +28,18 @@ class Login extends Component
     {
         $this->validate();
 
-        if (Auth::attempt([
-            'email' => $this->email,
-            'password' => $this->password
-        ])) {
+        if (Auth::attempt(['email' => $this->email,'password' => $this->password])) {
+           
             session()->regenerate();
 
             if (Auth::user()->role === 'admin') {
                 return redirect()->route('administrador.dashboard');
             }
-            if(Auth::user()->role === 'professor'){
+            if (Auth::user()->role === 'professor') {
                 return redirect()->route('professor.dashboard');
             }
-            if(Auth::user()->role === 'user'){
-                return redirect()->route('user.dashboard');
+            if (Auth::user()->role === 'Aluno') {
+                return redirect()->route('aluno.dashboard');
             }
         }
         session()->flash('error', 'Email ou senha incorretos');

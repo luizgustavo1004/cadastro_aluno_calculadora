@@ -23,7 +23,6 @@ const ROLE_ADMIN = 'admin';
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
         'email',
         'password',
         'role'
@@ -58,12 +57,7 @@ const ROLE_ADMIN = 'admin';
             return $this->role === self::ROLE_PROFESSOR;
     }
 
-
-
-
-
-
-
-
-
+    public function aluno(){
+        return $this->hasOne(Aluno::class);
+    }
 }
